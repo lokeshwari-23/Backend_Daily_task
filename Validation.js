@@ -1,5 +1,5 @@
 import React from "react";
-
+//form validation name and password 
 function Validation(){
     let name=React.createRef();
     let password=React.createRef();
