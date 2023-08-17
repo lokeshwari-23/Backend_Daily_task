@@ -1,3 +1,6 @@
+
+// Take a file from the user check if the file is present or not .
+// The file should be of only .txt form.check that the file size should not excess 10kb
 const http = require("http");
 
 const formidable = require('formidable');
