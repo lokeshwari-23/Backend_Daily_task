@@ -1,0 +1,45 @@
+<!-- 1.create an array of 5 objects in ejs file which has properties like name and salary and then using ejs file print all the names in uppercase and display the name and salary in form of a html table -->
+
+ 
+<h1>Name and salary</h1>
+ <table border= "2px solid">
+<tr>
+    <th>Name</th>
+    <th>Salary</th>
+</tr>
+<!-- <th>Name:</th> -->
+ <% let array = [{name:"lokeshwari",salary:40000},{name:"karthi",salary:50000},{name:"priya",salary:30000},{name:"abarna",salary:20000},{name:"lok",salary:35000}]; %>
+ <%array.forEach((ele)=>{%>
+    <tr>
+   <td><%=ele.name.toUpperCase()%></td>
+   <td><%=ele.salary%></td>
+   </tr>
+  
+ <%})%> 
+</table>
+<!-- ======================================================= -->
+<!-- 2.create an array in javascript file and print the sum of all elements of that array in ejs template -->
+<h1>Sum of Array</h1>
+<%var count=0%> 
+<%var num=[1,2,3,4,5]%>
+
+ <%num.forEach((ele)=>{%>
+
+<%count+=ele%>
+ <%})%> 
+ <%=count%>
+<!-- //============================================================= -->
+<!-- 3.create a route in express that processes which day of the week it is through Date class and then send this result to the ejs file with either "It is weekend".its a weekend depending on the day -->
+<h1>Weekend or Weekday</h1>
+<%const date=new Date();%>
+<%=date%><br>
+
+<%const day=date.getDay();%>
+<%=day%><br>
+<% var result=""%>
+
+<%if((day===6)||(day===7)){result="weekend"}else{result="No,Its Weekday!"}%>
+<%=result %> 
+
+
+
