@@ -1,5 +1,8 @@
+/*4.create a form which should accept name and password you have to validate whether 
+the name and password are not empty and password should be min 5 character in length*/
+
 import React from "react";
-//form validation name and password 
+
 function Validation(){
     let name=React.createRef();
     let password=React.createRef();

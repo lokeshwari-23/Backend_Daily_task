@@ -1,3 +1,6 @@
+//3. create a form which should accept 2 numbers from user and display their product
+
+
 import React from "react";
 function FormProduct(props){
     const num1=React.createRef();

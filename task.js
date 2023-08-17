@@ -1,3 +1,16 @@
+//1.Take a string as props and return the string in uppercase
+import React from "react";
+function Upper(props){
+    
+    return (
+    <>
+    <h2>{props.data.toUpperCase()}</h2>
+    </>
+    )
+}
+//===================================================================================
+
+//2.Take a array as a props and filter out even number from the array
 
 function Task(props)
 {
