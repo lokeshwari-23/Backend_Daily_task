@@ -1,0 +1,18 @@
+<div>
+    <h1>Content Deleted</h1>
+    <%data.forEach((val,index)=>{%>
+        <div>
+            <form action="/remove" method="post">
+                <h1>
+                    <%=(index+1)%>.<%=val.Title%>
+                </h1>
+                <input type="hidden" name="delete" value="<%=val._id%>">
+                <input type="hidden" name="count" value="<%=(index+1)%>">
+                <input type="hidden" name="deltitle" value="<%=val.Title%>">
+                <input type="submit" value="delete">
+            </form>
+
+        </div>
+        <%})%>
+</div>
+</body>

@@ -1,0 +1,19 @@
+<div>
+    <h1>Contents</h1>
+    <%data.forEach((val,index)=>{%>
+        <div>
+            <form action="/editblog" method="post">
+                <h1>
+                    <%=(index+1)%>.<%=val.Title%>
+                </h1>
+                <input type="hidden" name="yellow" value="<%=val._id%>">
+                <input type="hidden" name="editer" value="<%=val.Title%>">
+                <input type="hidden" name="count" value="<%=(index+1)%>">
+                <input type="submit" value="edit">
+            </form>
+
+        </div>
+        <%})%>
+</div>
+
+</body>

@@ -1,0 +1,18 @@
+<div>
+    <h1>Edit</h1>
+    <form action="/updatechanges" method="post">
+        <div>
+            <label>Enter The Title</label><br>
+            <input type="text" name="changedtitle">
+        </div><br>
+        <div>
+            <label for="">Enter The comment</label><br>
+            <textarea name="changecontent" id="" cols="30" rows="10">Write content</textarea>
+        </div><br>
+        <input type="hidden" name="changeval" value="<%=element%>"><br>
+        <input type="submit" value="Save changes">
+</div>
+
+</form>
+</div>
+</body>
